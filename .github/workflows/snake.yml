@@ -15,7 +15,7 @@ jobs:
       - name: Generar animación Snake 🐍
         uses: Platane/snk@v3
         with:
-          github_user_name: amayo
+          github_user_name: shnimlz
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
