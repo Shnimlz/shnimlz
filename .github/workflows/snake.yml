@@ -1,28 +1,33 @@
-name: Generar Snake Animation
+name: Generar Snake Animation 🐍
 
 on:
   schedule:
-    - cron: "0 0 * * *" # ejecuta cada día
+    - cron: "0 0 * * *"  # cada día a medianoche
   workflow_dispatch:
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 👈 necesario para subir a output
     steps:
       - name: Checkout del repositorio
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias necesarias
+        run: sudo apt-get install -y imagemagick ffmpeg gifsicle
 
       - name: Generar animación Snake 🐍
         uses: Platane/snk@v3
         with:
-          github_user_name: shnimlz
+          github_user_name: Shnimlz
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake-light.svg?palette=github-light
+            dist/github-contribution-grid-snake.gif
 
       - name: Subir resultados al branch output
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
