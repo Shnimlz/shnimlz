@@ -67,3 +67,4 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/shnimlz/shnimlz/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
 </div>
+
