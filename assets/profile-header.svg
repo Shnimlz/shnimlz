@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
+<title id="title">Shnimlz — Aprendo construyendo</title>
+<desc id="desc">Terminal animada. TypeScript, Discord y desarrollo web. Proyectos actuales: DDC y Amayo.me.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10182b"/><stop offset="1" stop-color="#19142e"/></linearGradient>
+ <linearGradient id="accent"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#a5b4fc" stroke-opacity=".055"/></pattern>
+</defs>
+<style>
+ text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+ .cursor{animation:blink 1.2s steps(1) infinite}
+ .signal{animation:pulse 3s ease-in-out infinite}
+ .bar{transform-box:fill-box;transform-origin:center bottom;animation:equalize 1.8s ease-in-out infinite alternate}
+ .b2{animation-delay:-.5s}.b3{animation-delay:-1.1s}.b4{animation-delay:-.8s}
+ @keyframes blink{0%,45%{opacity:1}50%,95%{opacity:0}}
+ @keyframes pulse{50%{opacity:.35}}
+ @keyframes equalize{0%{transform:scaleY(.35)}100%{transform:scaleY(1)}}
+ @media(prefers-reduced-motion:reduce){.cursor,.signal,.bar{animation:none}}
+</style>
+<rect x="1" y="1" width="958" height="338" rx="22" fill="url(#bg)" stroke="#35405a"/>
+<rect x="1" y="1" width="958" height="338" rx="22" fill="url(#grid)"/>
+<path d="M24 52H936" stroke="#35405a"/>
+<circle cx="30" cy="27" r="5" fill="#fb7185"/><circle cx="49" cy="27" r="5" fill="#fbbf24"/><circle cx="68" cy="27" r="5" fill="#34d399"/>
+<text x="92" y="32" font-size="12" fill="#a6b2cb">shnimlz / learning-in-progress</text>
+<circle class="signal" cx="817" cy="27" r="4" fill="#67e8f9"/>
+<text x="830" y="32" font-size="11" fill="#a6b2cb">EN EVOLUCIÓN</text>
+<text x="40" y="94" font-size="14" fill="#67e8f9">$ whoami</text>
+<text x="38" y="158" font-size="56" font-weight="700" letter-spacing="-2" fill="url(#accent)">Shnimlz<tspan fill="#67e8f9">.</tspan></text>
+<text x="41" y="197" font-size="21" fill="#edf2ff">Aprendo construyendo.</text>
+<rect class="cursor" x="310" y="179" width="11" height="23" rx="1" fill="#67e8f9"/>
+<text x="41" y="237" font-size="15" fill="#a6b2cb">TypeScript · Discord · Desarrollo web</text>
+<rect x="40" y="268" width="108" height="32" rx="16" fill="#142f43" stroke="#28526a"/>
+<text x="60" y="289" font-size="12" fill="#67e8f9">DDC / bot</text>
+<rect x="159" y="268" width="152" height="32" rx="16" fill="#2a2346" stroke="#4a3a6d"/>
+<text x="180" y="289" font-size="12" fill="#d4c7ff">Amayo.me / web</text>
+<g transform="translate(680 104)">
+<rect width="232" height="164" rx="16" fill="#0b1120" stroke="#35405a"/>
+<text x="18" y="29" fill="#a6b2cb" font-size="11">BUILD · LEARN · REPEAT</text>
+<path d="m47 63-22 20 22 20m137-40 22 20-22 20m-61-47-16 52" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#67e8f9">
+<rect class="bar" x="72" y="130" width="8" height="14" rx="3"/>
+<rect class="bar b2" x="89" y="120" width="8" height="24" rx="3"/>
+<rect class="bar b3" x="106" y="125" width="8" height="19" rx="3"/>
+<rect class="bar b4" x="123" y="116" width="8" height="28" rx="3"/>
+<rect class="bar b2" x="140" y="128" width="8" height="16" rx="3"/>
+</g></g>
+</svg>
